@@ -137,13 +137,11 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Item Receipt": {
+        "after_insert": "silverplast.api.item_receipt.create_incoming_qc"
+    }
+}
 
 # Scheduled Tasks
 # ---------------
