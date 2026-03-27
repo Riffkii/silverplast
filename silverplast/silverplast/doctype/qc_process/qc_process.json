@@ -1,16 +1,23 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-03-26 11:29:48.773232",
+ "creation": "2026-03-27 09:26:34.942950",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "source_incoming_qc",
   "item_code",
-  "qty_received",
-  "posting_date",
+  "qty",
+  "qc_result",
   "remarks"
  ],
  "fields": [
+  {
+   "fieldname": "source_incoming_qc",
+   "fieldtype": "Link",
+   "label": "Source Incoming QC",
+   "options": "Incoming QC"
+  },
   {
    "fieldname": "item_code",
    "fieldtype": "Small Text",
@@ -18,14 +25,15 @@
    "max_height": "30px"
   },
   {
-   "fieldname": "qty_received",
+   "fieldname": "qty",
    "fieldtype": "Float",
-   "label": "Quantity Received"
+   "label": "Quantity"
   },
   {
-   "fieldname": "posting_date",
-   "fieldtype": "Date",
-   "label": "Posting Date"
+   "fieldname": "qc_result",
+   "fieldtype": "Select",
+   "label": "QC Result",
+   "options": "Pending\nPass\nReject"
   },
   {
    "fieldname": "remarks",
@@ -37,10 +45,10 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-26 18:24:03.812217",
+ "modified": "2026-03-27 09:29:40.710306",
  "modified_by": "Administrator",
  "module": "Silverplast",
- "name": "Item Receipt",
+ "name": "QC Process",
  "owner": "Administrator",
  "permissions": [
   {
