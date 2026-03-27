@@ -1,0 +1,103 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-27 07:26:39.625006",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "entry_type",
+  "item",
+  "from_warehouse",
+  "to_warehouse",
+  "qty",
+  "tanggal",
+  "jam",
+  "admin",
+  "bukti_foto",
+  "qr_code"
+ ],
+ "fields": [
+  {
+   "fieldname": "entry_type",
+   "fieldtype": "Select",
+   "label": "entry_type",
+   "options": "Produksi\nPindah Gudang\nPenjualan"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "item",
+   "options": "Item Receipt"
+  },
+  {
+   "fieldname": "from_warehouse",
+   "fieldtype": "Link",
+   "label": "from_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "to_warehouse",
+   "fieldtype": "Link",
+   "label": "to_warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "qty"
+  },
+  {
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "label": "tanggal"
+  },
+  {
+   "fieldname": "jam",
+   "fieldtype": "Time",
+   "label": "jam"
+  },
+  {
+   "fieldname": "admin",
+   "fieldtype": "Link",
+   "label": "admin",
+   "options": "User"
+  },
+  {
+   "fieldname": "bukti_foto",
+   "fieldtype": "Attach Image",
+   "label": "bukti_foto"
+  },
+  {
+   "fieldname": "qr_code",
+   "fieldtype": "Data",
+   "label": "qr_code"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-27 07:34:37.396408",
+ "modified_by": "Administrator",
+ "module": "Silverplast",
+ "name": "Stock Entry",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

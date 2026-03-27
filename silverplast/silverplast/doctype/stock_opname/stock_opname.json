@@ -1,0 +1,102 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-27 07:36:03.691973",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "warehouse",
+  "tanggal",
+  "jam_operasional",
+  "item",
+  "qty_sistem",
+  "qty_aktual",
+  "selisih",
+  "status",
+  "admin",
+  "keterangan"
+ ],
+ "fields": [
+  {
+   "fieldname": "warehouse",
+   "fieldtype": "Link",
+   "label": "warehouse",
+   "options": "Warehouse"
+  },
+  {
+   "fieldname": "tanggal",
+   "fieldtype": "Date",
+   "label": "tanggal"
+  },
+  {
+   "fieldname": "jam_operasional",
+   "fieldtype": "Time",
+   "label": "jam_operasional"
+  },
+  {
+   "fieldname": "item",
+   "fieldtype": "Link",
+   "label": "item",
+   "options": "Item Receipt"
+  },
+  {
+   "fieldname": "qty_sistem",
+   "fieldtype": "Data",
+   "label": "qty_sistem"
+  },
+  {
+   "fieldname": "qty_aktual",
+   "fieldtype": "Data",
+   "label": "qty_aktual"
+  },
+  {
+   "fieldname": "selisih",
+   "fieldtype": "Float",
+   "label": "selisih"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "label": "status",
+   "options": "Normal\nAda Selisih"
+  },
+  {
+   "fieldname": "admin",
+   "fieldtype": "Link",
+   "label": "admin",
+   "options": "User"
+  },
+  {
+   "fieldname": "keterangan",
+   "fieldtype": "Small Text",
+   "label": "keterangan"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-27 07:40:04.974818",
+ "modified_by": "Administrator",
+ "module": "Silverplast",
+ "name": "Stock Opname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

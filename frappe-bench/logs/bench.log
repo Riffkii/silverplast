@@ -1,0 +1,73 @@
+2026-03-26 20:30:07,596 DEBUG cd frappe-bench && uv venv env --seed --python python3.11
+2026-03-26 20:30:09,997 LOG Getting frappe
+2026-03-26 20:30:09,997 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2026-03-26 20:30:30,801 LOG Installing frappe
+2026-03-26 20:30:30,803 DEBUG cd /home/wahyu260697/document/Erpnext/silverplast/frappe-bench && uv pip install --quiet --upgrade -e /home/wahyu260697/document/Erpnext/silverplast/frappe-bench/apps/frappe  --python /home/wahyu260697/document/Erpnext/silverplast/frappe-bench/env/bin/python
+2026-03-26 20:30:38,841 DEBUG cd /home/wahyu260697/document/Erpnext/silverplast/frappe-bench/apps/frappe && yarn install --check-files
+2026-03-26 20:30:57,360 DEBUG cd frappe-bench && bench build
+2026-03-26 20:30:57,500 INFO /home/wahyu260697/.local/bin/bench build
+2026-03-26 20:31:25,890 LOG setting up backups
+2026-03-26 20:31:25,996 LOG backups were set up
+2026-03-26 20:31:25,999 INFO Bench frappe-bench initialized
+2026-03-26 20:34:28,921 INFO /home/wahyu260697/.local/bin/bench new-site dev.local
+2026-03-26 20:34:37,819 INFO /home/wahyu260697/.local/bin/bench new-site dev.local
+2026-03-26 20:35:01,790 INFO /home/wahyu260697/.local/bin/bench set-config -g db_host 127.0.0.1
+2026-03-26 20:35:05,785 INFO /home/wahyu260697/.local/bin/bench set-config -g db_port 3306
+2026-03-26 20:35:13,908 INFO /home/wahyu260697/.local/bin/bench new-site dev.local --db-host 127.0.0.1 --db-root-password root --admin-password admin
+2026-03-26 20:37:21,883 INFO /home/wahyu260697/.local/bin/bench --site dev.local set-config developer_mode 1
+2026-03-26 20:37:26,417 INFO /home/wahyu260697/.local/bin/bench --site dev.local set-config developer_mode 1
+2026-03-26 20:37:33,788 INFO /home/wahyu260697/.local/bin/bench restart
+2026-03-26 20:38:46,125 INFO /home/wahyu260697/.local/bin/bench start
+2026-03-26 20:38:46,426 INFO /home/wahyu260697/.local/bin/bench serve --port 8000
+2026-03-26 20:38:46,441 INFO /home/wahyu260697/.local/bin/bench worker
+2026-03-26 20:38:46,442 INFO /home/wahyu260697/.local/bin/bench schedule
+2026-03-26 20:38:46,446 INFO /home/wahyu260697/.local/bin/bench watch
+2026-03-26 20:40:43,525 INFO /home/wahyu260697/.local/bin/bench use dev.local
+2026-03-26 20:40:54,257 INFO /home/wahyu260697/.local/bin/bench start
+2026-03-26 20:40:54,577 INFO /home/wahyu260697/.local/bin/bench worker
+2026-03-26 20:40:54,579 INFO /home/wahyu260697/.local/bin/bench schedule
+2026-03-26 20:40:54,587 INFO /home/wahyu260697/.local/bin/bench watch
+2026-03-26 20:40:54,593 INFO /home/wahyu260697/.local/bin/bench serve --port 8000
+2026-03-26 20:57:52,160 INFO /home/wahyu260697/.local/bin/bench --site dev.local install-app silverplast
+2026-03-26 21:03:31,897 INFO /home/wahyu260697/.local/bin/bench --site dev.local install-app silverplast
+2026-03-26 21:05:45,640 INFO /home/wahyu260697/.local/bin/bench --site dev.local install-app silverplast
+2026-03-26 21:06:33,697 INFO /home/wahyu260697/.local/bin/bench --site dev.local install-app silverplast
+2026-03-26 21:06:40,510 INFO /home/wahyu260697/.local/bin/bench --site dev.local migrate
+2026-03-26 21:06:45,805 INFO /home/wahyu260697/.local/bin/bench restart
+2026-03-26 21:06:55,889 INFO /home/wahyu260697/.local/bin/bench --site dev.local clear-cache
+2026-03-26 21:07:02,972 INFO /home/wahyu260697/.local/bin/bench start
+2026-03-26 21:07:03,251 INFO /home/wahyu260697/.local/bin/bench watch
+2026-03-26 21:07:03,257 INFO /home/wahyu260697/.local/bin/bench serve --port 8000
+2026-03-26 21:07:03,262 INFO /home/wahyu260697/.local/bin/bench schedule
+2026-03-26 21:07:03,264 INFO /home/wahyu260697/.local/bin/bench worker
+2026-03-26 21:13:06,406 INFO /home/wahyu260697/.local/bin/bench --site dev.local list-apps
+2026-03-26 21:13:21,869 INFO /home/wahyu260697/.local/bin/bench --site dev.local migrate
+2026-03-26 21:13:30,873 INFO /home/wahyu260697/.local/bin/bench restart
+2026-03-26 21:14:11,633 INFO /home/wahyu260697/.local/bin/bench --site dev.local migrate
+2026-03-26 21:14:18,931 INFO /home/wahyu260697/.local/bin/bench --site dev.local clear-cache
+2026-03-26 21:17:54,534 INFO /home/wahyu260697/.local/bin/bench start
+2026-03-26 21:17:54,841 INFO /home/wahyu260697/.local/bin/bench serve --port 8000
+2026-03-26 21:17:54,846 INFO /home/wahyu260697/.local/bin/bench schedule
+2026-03-26 21:17:54,857 INFO /home/wahyu260697/.local/bin/bench watch
+2026-03-26 21:17:54,863 INFO /home/wahyu260697/.local/bin/bench worker
+2026-03-26 21:18:41,108 INFO /home/wahyu260697/.local/bin/bench --site dev.local migrate
+2026-03-26 21:18:48,552 INFO /home/wahyu260697/.local/bin/bench --site dev.local clear-cache
+2026-03-26 21:19:09,096 INFO /home/wahyu260697/.local/bin/bench start
+2026-03-26 21:19:09,383 INFO /home/wahyu260697/.local/bin/bench schedule
+2026-03-26 21:19:09,397 INFO /home/wahyu260697/.local/bin/bench serve --port 8000
+2026-03-26 21:19:09,397 INFO /home/wahyu260697/.local/bin/bench watch
+2026-03-26 21:19:09,407 INFO /home/wahyu260697/.local/bin/bench worker
+2026-03-26 21:20:16,345 INFO /home/wahyu260697/.local/bin/bench restart
+2026-03-26 21:21:23,282 INFO /home/wahyu260697/.local/bin/bench start
+2026-03-26 21:21:23,604 INFO /home/wahyu260697/.local/bin/bench watch
+2026-03-26 21:21:23,616 INFO /home/wahyu260697/.local/bin/bench worker
+2026-03-26 21:21:23,629 INFO /home/wahyu260697/.local/bin/bench serve --port 8000
+2026-03-26 21:21:23,631 INFO /home/wahyu260697/.local/bin/bench schedule
+2026-03-26 21:22:12,356 INFO /home/wahyu260697/.local/bin/bench start
+2026-03-26 21:22:12,632 INFO /home/wahyu260697/.local/bin/bench worker
+2026-03-26 21:22:12,633 INFO /home/wahyu260697/.local/bin/bench watch
+2026-03-26 21:22:12,635 INFO /home/wahyu260697/.local/bin/bench serve --port 8000
+2026-03-26 21:22:12,647 INFO /home/wahyu260697/.local/bin/bench schedule
+2026-03-26 21:23:49,873 INFO /home/wahyu260697/.local/bin/bench --site dev.local migrate
+2026-03-26 21:24:02,936 INFO /home/wahyu260697/.local/bin/bench --site dev.local clear-cache
+2026-03-26 21:25:07,984 INFO /home/wahyu260697/.local/bin/bench --site dev.local migrate
