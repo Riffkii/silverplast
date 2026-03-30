@@ -1,23 +1,16 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-03-26 18:28:49.172927",
+ "creation": "2026-03-26 11:29:48.773232",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "source_receipt",
   "item_code",
   "qty_received",
   "posting_date",
   "remarks"
  ],
  "fields": [
-  {
-   "fieldname": "source_receipt",
-   "fieldtype": "Link",
-   "label": "Source Receipt",
-   "options": "Item Receipt"
-  },
   {
    "fieldname": "item_code",
    "fieldtype": "Small Text",
@@ -44,10 +37,10 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-26 18:39:01.256850",
+ "modified": "2026-03-30 12:59:48.551848",
  "modified_by": "Administrator",
- "module": "Silverplast",
- "name": "Incoming QC",
+ "module": "Inventory",
+ "name": "Item Receipt",
  "owner": "Administrator",
  "permissions": [
   {

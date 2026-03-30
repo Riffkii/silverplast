@@ -140,6 +140,9 @@ app_license = "mit"
 doc_events = {
 	"Item Receipt": {
         "after_insert": "silverplast.api.item_receipt.create_incoming_qc"
+    },
+    "Stock Entry": {
+        "on_submit": "silverplast.api.stock_entry.on_stock_entry_submit"
     }
 }
 

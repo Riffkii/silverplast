@@ -1,8 +1,26 @@
-// Copyright (c) 2026, P79 and contributors
-// For license information, please see license.txt
+frappe.ui.form.on("Stock Entry", {
+  refresh(frm) {
+    // Sembunyikan field To Warehouse jika bukan Pindah Gudang
+    frm.toggle_display("to_warehouse",
+        frm.doc.entry_type === "Pindah Gudang"
+    );
 
-// frappe.ui.form.on("Stock Entry", {
-// 	refresh(frm) {
+    // Sembunyikan From Warehouse untuk tipe Produksi
+    frm.toggle_display("from_warehouse",
+        frm.doc.entry_type !== "Produksi"
+    );
+  },
 
-// 	},
-// });
+  entry_type(frm) {
+    frm.toggle_display("to_warehouse",
+      frm.doc.entry_type === "Pindah Gudang"
+    );
+    frm.toggle_display("from_warehouse",
+        frm.doc.entry_type !== "Produksi"
+    );
+
+    // Reset warehouse kalau type berubah
+    frm.set_value("to_warehouse", "");
+    frm.set_value("from_warehouse", "");
+  }
+});
