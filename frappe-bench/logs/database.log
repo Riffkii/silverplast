@@ -2676,3 +2676,75 @@ ALTER TABLE `tabStock Opname` MODIFY `selisih` decimal(21,9) not null default 0
 ALTER TABLE `tabStock Opname` ADD COLUMN `keterangan` text
 2026-03-27 07:40:05,149 WARNING database DDL Query made to DB:
 ALTER TABLE `tabStock Opname` MODIFY `selisih` decimal(21,9) not null default 0
+2026-03-30 10:15:18,460 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-03-30 10:15:20,121 WARNING database DDL Query made to DB:
+ALTER TABLE `tabItem Receipt` ADD COLUMN `item_code` text, ADD COLUMN `qty_received` decimal(21,9) not null default 0, ADD COLUMN `posting_date` date, ADD COLUMN `remarks` text
+2026-03-30 10:15:20,337 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStock Entry` MODIFY `qty` decimal(21,9) not null default 0
+2026-03-30 10:16:55,968 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-03-30 10:16:57,235 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStock Entry` MODIFY `qty` decimal(21,9) not null default 0
+2026-03-30 10:19:04,746 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-03-30 10:19:06,793 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStock Entry` MODIFY `qty` decimal(21,9) not null default 0
+2026-03-30 10:19:48,429 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-03-30 10:19:49,637 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStock Entry` MODIFY `qty` decimal(21,9) not null default 0
+2026-03-30 10:19:49,790 WARNING database DDL Query made to DB:
+create table `tabQC Process` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`source_incoming_qc` varchar(140),
+`item_code` text,
+`qty` decimal(21,9) not null default 0,
+`qc_result` varchar(140),
+`remarks` text,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-03-30 10:19:49,933 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStock Opname` MODIFY `selisih` decimal(21,9) not null default 0
+2026-03-30 10:19:50,065 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWarehouse` MODIFY `capacity` decimal(21,9) not null default 0
+2026-03-30 10:19:50,164 WARNING database DDL Query made to DB:
+create table `tabIncoming QC` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus int(1) not null default '0',
+			idx int(8) not null default '0',
+			`source_receipt` varchar(140),
+`item_code` text,
+`qty_received` decimal(21,9) not null default 0,
+`posting_date` date,
+`remarks` text,
+`_user_tags` text,
+`_comments` text,
+`_assign` text,
+`_liked_by` text,
+index modified(modified))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2026-03-30 10:33:18,639 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2026-03-30 13:07:22,949 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
