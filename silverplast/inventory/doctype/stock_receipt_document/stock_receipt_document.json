@@ -1,0 +1,96 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-03-30 15:50:39.964478",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "source_qc",
+  "item_code",
+  "qty",
+  "msds_file",
+  "rohs_file",
+  "delivery_file",
+  "photo",
+  "checklist_ok",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "source_qc",
+   "fieldtype": "Link",
+   "label": "Source QC",
+   "options": "QC Process"
+  },
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Small Text",
+   "label": "Item Code",
+   "max_height": "30px"
+  },
+  {
+   "fieldname": "qty",
+   "fieldtype": "Float",
+   "label": "Quantity"
+  },
+  {
+   "fieldname": "msds_file",
+   "fieldtype": "Attach",
+   "label": "MSDS File"
+  },
+  {
+   "fieldname": "rohs_file",
+   "fieldtype": "Attach",
+   "label": "ROHS File"
+  },
+  {
+   "fieldname": "delivery_file",
+   "fieldtype": "Attach",
+   "label": "Delivery File"
+  },
+  {
+   "fieldname": "photo",
+   "fieldtype": "Attach Image",
+   "label": "Photo"
+  },
+  {
+   "default": "0",
+   "fieldname": "checklist_ok",
+   "fieldtype": "Check",
+   "label": "Ok"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks",
+   "max_height": "30px"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-03-30 16:02:04.792894",
+ "modified_by": "Administrator",
+ "module": "Inventory",
+ "name": "Stock Receipt Document",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
