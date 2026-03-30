@@ -45,9 +45,9 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-27 09:29:40.710306",
+ "modified": "2026-03-30 13:01:49.900008",
  "modified_by": "Administrator",
- "module": "Silverplast",
+ "module": "QC",
  "name": "QC Process",
  "owner": "Administrator",
  "permissions": [
