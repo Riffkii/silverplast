@@ -1,0 +1,7 @@
+2026-03-31 08:46:22,802 ERROR frappe New Exception collected in error log
+Site: dev.local
+Form Dict: {'doctype': 'Item Receipt', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
+2026-03-31 08:46:40,506 ERROR frappe Error while inserting deferred Error Log record: Error Log 2o5urmjm2e: 'Title' (Module import failed for Item Receipt, the DocType you're trying to open might be deleted.
+Error: No module named 'silverplast.silverplast.doctype.item_receipt.item_receipt') will get truncated, as max characters allowed is 140
+Site: dev.local
+Form Dict: {}

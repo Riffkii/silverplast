@@ -1,7 +1,15 @@
 [
-    "tabRoute",
-    "tabRoute History",
-    "tabInstalled Application",
+    "tabRole",
     "tabInstalled",
-    "tabSingles"
+    "tabDocType Link",
+    "tabWarehouse",
+    "tabDocPerm",
+    "tabDocType Action",
+    "tabDocType",
+    "tabInstalled Application",
+    "tabTag",
+    "tabSingles",
+    "tabDocType State",
+    "tabTag Link",
+    "tabDocField"
 ]
