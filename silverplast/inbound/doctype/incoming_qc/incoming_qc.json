@@ -1,17 +1,23 @@
 {
  "actions": [],
  "allow_rename": 1,
- "creation": "2026-03-26 11:29:48.773232",
+ "creation": "2026-03-26 18:28:49.172927",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "source_receipt",
   "item_code",
   "qty_received",
   "posting_date",
-  "backdate_reason",
   "remarks"
  ],
  "fields": [
+  {
+   "fieldname": "source_receipt",
+   "fieldtype": "Link",
+   "label": "Source Receipt",
+   "options": "Item Receipt"
+  },
   {
    "fieldname": "item_code",
    "fieldtype": "Small Text",
@@ -33,21 +39,15 @@
    "fieldtype": "Small Text",
    "label": "Remarks",
    "max_height": "30px"
-  },
-  {
-   "fieldname": "backdate_reason",
-   "fieldtype": "Small Text",
-   "label": "Backdate Reason",
-   "max_height": "30px"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-30 18:04:08.179772",
+ "modified": "2026-03-31 09:03:41.127513",
  "modified_by": "Administrator",
- "module": "Inventory",
- "name": "Item Receipt",
+ "module": "Inbound",
+ "name": "Incoming QC",
  "owner": "Administrator",
  "permissions": [
   {
