@@ -8,6 +8,7 @@
   "item_code",
   "qty_received",
   "posting_date",
+  "backdate_reason",
   "remarks"
  ],
  "fields": [
@@ -32,12 +33,18 @@
    "fieldtype": "Small Text",
    "label": "Remarks",
    "max_height": "30px"
+  },
+  {
+   "fieldname": "backdate_reason",
+   "fieldtype": "Small Text",
+   "label": "Backdate Reason",
+   "max_height": "30px"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-30 12:59:48.551848",
+ "modified": "2026-03-30 18:04:08.179772",
  "modified_by": "Administrator",
  "module": "Inventory",
  "name": "Item Receipt",

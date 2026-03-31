@@ -19,3 +19,34 @@ def create_qc_process(incoming_qc):
     qc.insert(ignore_permissions=True)
 
     return qc.name
+
+@frappe.whitelist()
+def qc_pass(qc_name):
+    qc = frappe.get_doc("QC Process", qc_name)
+
+    if qc.qc_result != "Pending":
+        frappe.throw("QC sudah diproses")
+
+    qc.qc_result = "Pass"
+    qc.save(ignore_permissions=True)
+
+    doc = frappe.get_doc({
+        "doctype": "Stock Receipt Document",
+        "source_qc": qc.name,
+        "item_code": qc.item_code,
+        "qty": qc.qty
+    })
+
+    doc.insert(ignore_permissions=True)
+
+    return doc.name
+
+@frappe.whitelist()
+def qc_reject(qc_name):
+    qc = frappe.get_doc("QC Process", qc_name)
+
+    if qc.qc_result != "Pending":
+        frappe.throw("QC sudah diproses")
+
+    qc.qc_result = "Reject"
+    qc.save(ignore_permissions=True)

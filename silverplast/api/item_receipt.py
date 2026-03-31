@@ -1,4 +1,5 @@
 import frappe
+from frappe.utils import getdate, nowdate, nowtime
 
 def create_incoming_qc(doc, method):
     frappe.get_doc({
@@ -9,3 +10,17 @@ def create_incoming_qc(doc, method):
         "posting_date": doc.posting_date,
         "remarks": doc.remarks
     }).insert(ignore_permissions=True)
+
+def validate(self):
+    today = getdate(nowdate())
+    posting = getdate(self.posting_date)
+
+    if posting < today:
+
+        if not self.backdate_reason:
+            frappe.throw("Backdate reason wajib diisi")
+
+        current_time = nowtime()
+
+        if "08:00:00" <= current_time <= "17:00:00":
+            frappe.throw("Backdate hanya diperbolehkan di luar jam kerja (08:00 - 17:00)")
