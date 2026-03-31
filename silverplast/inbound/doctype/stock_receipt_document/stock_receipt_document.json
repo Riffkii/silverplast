@@ -69,9 +69,9 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-03-30 16:02:04.792894",
+ "modified": "2026-03-31 09:03:03.441760",
  "modified_by": "Administrator",
- "module": "Inventory",
+ "module": "Inbound",
  "name": "Stock Receipt Document",
  "owner": "Administrator",
  "permissions": [
